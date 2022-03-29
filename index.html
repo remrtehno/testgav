@@ -59,6 +59,33 @@
         margin: auto;
         border: 5px solid;
       }
+      .main-slider .owl-nav {
+        position: absolute;
+        transform: translate(-50%, -50%) !important;
+        top: 50%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 999999999;
+        font-size: 4rem;
+        color: white;
+        left: 50%;
+        width: 100%;
+      }
+      .owl-theme .owl-nav [class*='owl-']:hover {
+        background: none;
+        opacity: 0.8;
+      }
+      .owl-theme .owl-nav [class*='owl-'] > span {
+        transform: translateY(-50%);
+        position: absolute;
+        top: 0;
+      }
+      .owl-prev span {
+        left: 0;
+      }
+      .owl-next span {
+        right: 0;
+      }
     </style>
 
     <title>Hello, world!</title>
