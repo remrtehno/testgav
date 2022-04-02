@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,AAAC,CACJ,UAAU,CAAE,uBAAuB,CAAC,SAAS,CAAC,MAAM,CAAC,YAAc,CAAC,IAAI,CACxE,UAAU,CAAE,KAAK,CAEjB,OAAO,CAAE,MAAM,CACf,QAAQ,CAAE,QAAQ,CAClB,OAAO,CAAE,IAAI,CACd",
+    "sources": [
+        "../scss/stol.scss"
+    ],
+    "names": [],
+    "file": "stol.min.css"
+}
