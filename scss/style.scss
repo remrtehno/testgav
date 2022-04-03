@@ -4,6 +4,55 @@
 @import 'main-style.scss';
 @import 'stol.scss';
 
+.stol-wrapper {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  .player {
+    width: 160px;
+    height: 160px;
+    background-color: rgb(154, 199, 247);
+    position: absolute;
+  }
+
+  .name {
+    min-width: 150px;
+    max-width: 150px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .position-1 {
+    background: url(../images/rangs-1.png) no-repeat 24% bottom;
+    bottom: 0%;
+    left: 0%;
+  }
+
+  .position-2 {
+    background: url(../images/rangs-2.png) no-repeat 24% bottom;
+    right: 0%;
+    bottom: 0%;
+    height: 220px;
+    .name {
+      margin-top: 50px;
+    }
+  }
+
+  .position-3 {
+    background: url(../images/rangs-3.png) no-repeat 47% top;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 220px;
+    margin: auto;
+    .name {
+      margin-top: 20px;
+    }
+  }
+}
+
 .small-box {
   background-color: #368960 !important;
 }
