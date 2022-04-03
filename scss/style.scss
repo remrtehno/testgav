@@ -13,46 +13,42 @@
     }
   }
 }
-
-.player {
-  width: 160px;
-  height: 160px;
-  background-color: rgb(154, 199, 247);
-  margin: 15px;
-  position: absolute;
+.login-bg {
+  background: url(../images/login.jpg) no-repeat center center/cover;
 }
 
-.name {
-  min-width: 150px;
-  max-width: 150px;
-  text-overflow: ellipsis;
+.forms-login-autorize {
+  background-color: white;
+  border-radius: 10px;
   overflow: hidden;
-}
-
-.position-1 {
-  background: url(../images/rangs-1.png) no-repeat 24% bottom;
-  bottom: 30%;
-  left: 30%;
-}
-
-.position-2 {
-  background: url(../images/rangs-2.png) no-repeat 24% bottom;
-  right: 30%;
-  bottom: 30%;
-  height: 220px;
-  .name {
-    margin-top: 50px;
+  .nav {
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .nav-tabs .nav-link {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.9rem;
+    border: 0;
+    color: #368960;
+    &.active {
+      font-weight: 800;
+    }
+  }
+  input {
+    height: 50px;
+    font-size: 0.9rem;
   }
 }
 
-.position-3 {
-  background: url(../images/rangs-3.png) no-repeat center top;
-  top: 30%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 250px;
-  height: 220px;
-  .name {
-    margin-top: 20px;
+.btn-submit {
+  font-size: 1.5rem;
+  padding: 10px;
+  width: 100%;
+  background-color: #368960;
+  min-height: 50px;
+  color: white;
+  &:hover {
+    background-color: #89cba9;
   }
 }
