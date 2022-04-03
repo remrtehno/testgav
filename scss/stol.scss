@@ -7,13 +7,21 @@
 
   display: flex;
   align-items: center;
-  justify-content: centerr;
+  justify-content: center;
+
+  @media (max-width: 990px) {
+    padding: 2rem;
+  }
 }
 
 .stol-wrapper {
   position: relative;
   width: 600px;
   height: 400px;
+  @media (max-width: 990px) {
+    width: 435px;
+    height: 350px;
+  }
   margin: auto;
   .player {
     width: 160px;
@@ -33,6 +41,14 @@
     background: url(../images/rangs-1.png) no-repeat 24% bottom;
     bottom: 0%;
     left: 0%;
+    @media (max-width: 990px) {
+      background-size: 70%;
+      height: 125px;
+
+      .name {
+        margin-left: -18px;
+      }
+    }
   }
 
   .position-2 {
@@ -42,6 +58,14 @@
     height: 220px;
     .name {
       margin-top: 50px;
+    }
+    @media (max-width: 990px) {
+      background-size: 70%;
+      height: 175px;
+
+      .name {
+        margin-left: -20px;
+      }
     }
   }
 
@@ -53,8 +77,17 @@
     width: 250px;
     height: 220px;
     margin: auto;
+
     .name {
       margin-top: 20px;
+    }
+
+    @media (max-width: 990px) {
+      background-size: 70%;
+      height: 165px;
+      .name {
+        margin-left: -4pxC;
+      }
     }
   }
 }

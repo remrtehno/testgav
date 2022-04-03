@@ -1,8 +1,17 @@
-@import 'adminlte.min.css';
-@import 'bootstrap.min.css';
-@import 'card.scss';
-@import 'main-style.scss';
-@import 'stol.scss';
+@import './adminlte.min.scss';
+@import './bootstrap.min.scss';
+@import './card.scss';
+@import './main-style.scss';
+@import './stol.scss';
+
+.navbar-toggler {
+  color: rgba(0, 0, 0, 0.55);
+  border-color: rgba(0, 0, 0, 0.1);
+  background-color: whitesmoke;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 
 .small-box {
   background-color: #368960 !important;
@@ -69,4 +78,10 @@
 
 .agree-text > div {
   height: 150px;
+}
+
+@media (max-width: 990px) {
+  html {
+    font-size: 13px;
+  }
 }
