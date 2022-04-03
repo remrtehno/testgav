@@ -21,882 +21,658 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body class="hold-transition layout-top-nav">
-    <section>
-      <nav class="navbar navbar-expand-lg header-navbar">
-        <div class="container">
-          <a class="navbar-brand" href="/">
-            <img src="./images/logo.png" class="ing-fluid" alt="" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item mx-1">
-                <a class="nav-link" aria-current="page" href="#"
-                  ><i class="fa-solid fa-lock me-2"></i>
-                  Регистрация/Авторизация</a
-                >
-              </li>
-              <li class="nav-item mx-1">
-                <a class="nav-link" aria-current="page" href="#"
-                  ><i class="fa-solid fa-user me-2"></i> Личный кабинет</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </section>
-    <div class="wrapper">
+      <div class="wrapper">
+      
       <!-- Navbar -->
-      <nav class="main-header navbar navbar-white navbar-light py-3 px-4">
+      <nav
+        class="main-header navbar navbar-expand navbar-white navbar-light d-none"
+      >
         <!-- Left navbar links -->
-        <ul class="navbar-nav align-items-center">
-          <li class="nav-item d-inline-block">
-            <div class="h4 m-0">Баланс: 0$</div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"
+              ><i class="fas fa-bars"></i
+            ></a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="index3.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item d-none d-sm-inline-block">
+            <a href="#" class="nav-link">Contact</a>
           </li>
         </ul>
 
-        <a href="#" class="button2 fs-2 py-1 px-5">Перейти на стол</a>
         <!-- Right navbar links -->
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ml-auto d-none">
+          <!-- Navbar Search -->
           <li class="nav-item">
-            <a href="#" class="h4 text-decoration-none">
-              <i class="fa-solid fa-arrow-right-from-bracket"></i>
-              Выйти
+            <a
+              class="nav-link"
+              data-widget="navbar-search"
+              href="#"
+              role="button"
+            >
+              <i class="fas fa-search"></i>
+            </a>
+            <div class="navbar-search-block">
+              <form class="form-inline">
+                <div class="input-group input-group-sm">
+                  <input
+                    class="form-control form-control-navbar"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <div class="input-group-append">
+                    <button class="btn btn-navbar" type="submit">
+                      <i class="fas fa-search"></i>
+                    </button>
+                    <button
+                      class="btn btn-navbar"
+                      type="button"
+                      data-widget="navbar-search"
+                    >
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </li>
+
+          <!-- Messages Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+              <i class="far fa-comments"></i>
+              <span class="badge badge-danger navbar-badge">3</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img
+                    src="dist/img/user1-128x128.jpg"
+                    alt="User Avatar"
+                    class="img-size-50 mr-3 img-circle"
+                  />
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                      Brad Diesel
+                      <span class="float-right text-sm text-danger"
+                        ><i class="fas fa-star"></i
+                      ></span>
+                    </h3>
+                    <p class="text-sm">Call me whenever you can...</p>
+                    <p class="text-sm text-muted">
+                      <i class="far fa-clock mr-1"></i> 4 Hours Ago
+                    </p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img
+                    src="dist/img/user8-128x128.jpg"
+                    alt="User Avatar"
+                    class="img-size-50 img-circle mr-3"
+                  />
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                      John Pierce
+                      <span class="float-right text-sm text-muted"
+                        ><i class="fas fa-star"></i
+                      ></span>
+                    </h3>
+                    <p class="text-sm">I got your message bro</p>
+                    <p class="text-sm text-muted">
+                      <i class="far fa-clock mr-1"></i> 4 Hours Ago
+                    </p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <!-- Message Start -->
+                <div class="media">
+                  <img
+                    src="dist/img/user3-128x128.jpg"
+                    alt="User Avatar"
+                    class="img-size-50 img-circle mr-3"
+                  />
+                  <div class="media-body">
+                    <h3 class="dropdown-item-title">
+                      Nora Silvester
+                      <span class="float-right text-sm text-warning"
+                        ><i class="fas fa-star"></i
+                      ></span>
+                    </h3>
+                    <p class="text-sm">The subject goes here</p>
+                    <p class="text-sm text-muted">
+                      <i class="far fa-clock mr-1"></i> 4 Hours Ago
+                    </p>
+                  </div>
+                </div>
+                <!-- Message End -->
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item dropdown-footer"
+                >See All Messages</a
+              >
+            </div>
+          </li>
+          <!-- Notifications Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link" data-toggle="dropdown" href="#">
+              <i class="far fa-bell"></i>
+              <span class="badge badge-warning navbar-badge">15</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+              <span class="dropdown-item dropdown-header"
+                >15 Notifications</span
+              >
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-envelope mr-2"></i> 4 new messages
+                <span class="float-right text-muted text-sm">3 mins</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-users mr-2"></i> 8 friend requests
+                <span class="float-right text-muted text-sm">12 hours</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">
+                <i class="fas fa-file mr-2"></i> 3 new reports
+                <span class="float-right text-muted text-sm">2 days</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item dropdown-footer"
+                >See All Notifications</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+              <i class="fas fa-expand-arrows-alt"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-widget="control-sidebar"
+              data-controlsidebar-slide="true"
+              href="#"
+              role="button"
+            >
+              <i class="fas fa-th-large"></i>
             </a>
           </li>
         </ul>
       </nav>
       <!-- /.navbar -->
 
-      <!-- Content Wrapper. Contains page content -->
-      <div class="content-wrapper py-5">
-        <section class="content mb-5">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6">
-                <h3 class="mb-3">Список активных столов</h3>
 
-                <ul class="list-unstyled">
-                  <li class="mb-2">
-                    <img src="images/table30.png" class="mr-2 mt-n2" />
-                    <a href="#">Стол 1</a>
-                  </li>
-                  <li class="mb-2">
-                    <img src="images/table30.png" class="mr-2 mt-n2" />
-                    <a href="#">Стол 1</a>
-                  </li>
-                  <li class="mb-2">
-                    <img src="images/table30.png" class="mr-2 mt-n2" />
-                    <a href="#">Стол 7</a>
-                  </li>
-                  <li class="mb-2">
-                    <img src="images/table30.png" class="mr-2 mt-n2" />
-                    <a href="#">Стол 8</a>
-                  </li>
-                  <li class="mb-2">
-                    <img src="images/table30.png" class="mr-2 mt-n2" />
-                    <a href="#">Стол 11</a>
-                  </li>
-                  <li class="mb-2">
-                    <img src="images/table30.png" class="mr-2 mt-n2" />
-                    <a href="#">Стол 10</a>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <section>
+          <nav class="navbar navbar-expand-lg header-navbar">
+            <div class="container">
+              <a class="navbar-brand" href="/">
+                <img src="./images/logo.png" class="ing-fluid" alt="" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                  <li class="nav-item mx-1">
+                    <a href="./index.html" class="nav-link active">
+                      <p><i class="fa fa-external-link-alt nav-icon"></i>
+                      Выйти</p>
+                    </a>
                   </li>
                 </ul>
-
-                <nav class="pt-3">
-                  <ul class="pagination">
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">1</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">3</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-                <div class="p-4"></div>
-
-                <!-- =============================== -->
-
-                <h3 class="mb-3">Личные данные</h3>
-
-                <form class="row g-3 mb-5">
-                  <div class="col-12">
-                    <label for="inputAddress" class="form-label"
-                      >Ваш nickname (user name)</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="inputAddress"
-                      placeholder="ex: Richman99"
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label"
-                      >Пароль</label
-                    >
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="inputPassword4"
-                    />
-                  </div>
-
-                  <div class="col-12">
-                    <label for="inputAddress" class="form-label">Имя</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="inputAddress"
-                      placeholder="Ваше имя"
-                    />
-                  </div>
-                  <div class="col-12">
-                    <label for="inputAddress" class="form-label">Фамилия</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="inputAddress"
-                      placeholder="Ваше Фамилия"
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="age" class="form-label">Возраст</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="age"
-                      placeholder="18 лет..."
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label class="form-label">Пол</label>
-                    <div class="d-flex pt-1 align-items-center">
-                      <div class="form-check mr-4">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="gridRadios"
-                          id="gridRadios1"
-                          value="option1"
-                          checked
-                        />
-                        <label class="form-check-label" for="gridRadios1">
-                          Жен.
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="gridRadios"
-                          id="gridRadios2"
-                          value="option1"
-                          checked
-                        />
-                        <label class="form-check-label" for="gridRadios2">
-                          Муж.
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <label for="inputCity" class="form-label">Город</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="inputCity"
-                      placeholder="Ваш Город"
-                    />
-                  </div>
-                  <div class="col-md-6 mb-4">
-                    <label for="inputState" class="form-label">Страна</label>
-                    <select class="form-control" id="select">
-                      <option value="AX">AALAND ISLANDS</option>
-                      <option value="AF">AFGHANISTAN</option>
-                      <option value="AL">ALBANIA</option>
-                      <option value="DZ">ALGERIA</option>
-                      <option value="AS">AMERICAN SAMOA</option>
-                      <option value="AD">ANDORRA</option>
-                      <option value="AO">ANGOLA</option>
-                      <option value="AI">ANGUILLA</option>
-                      <option value="AQ">ANTARCTICA</option>
-                      <option value="AG">ANTIGUA AND BARBUDA</option>
-                      <option value="AR">ARGENTINA</option>
-                      <option value="AM">ARMENIA</option>
-                      <option value="AW">ARUBA</option>
-                      <option value="AU">AUSTRALIA</option>
-                      <option value="AT">AUSTRIA</option>
-                      <option value="AZ">AZERBAIJAN</option>
-                      <option value="BS">BAHAMAS</option>
-                      <option value="BH">BAHRAIN</option>
-                      <option value="BD">BANGLADESH</option>
-                      <option value="BB">BARBADOS</option>
-                      <option value="BY">BELARUS</option>
-                      <option value="BE">BELGIUM</option>
-                      <option value="BZ">BELIZE</option>
-                      <option value="BJ">BENIN</option>
-                      <option value="BM">BERMUDA</option>
-                      <option value="BT">BHUTAN</option>
-                      <option value="BO">BOLIVIA</option>
-                      <option value="BA">BOSNIA AND HERZEGOWINA</option>
-                      <option value="BW">BOTSWANA</option>
-                      <option value="BV">BOUVET ISLAND</option>
-                      <option value="BR">BRAZIL</option>
-                      <option value="IO">BRITISH INDIAN OCEAN TERRITORY</option>
-                      <option value="BN">BRUNEI DARUSSALAM</option>
-                      <option value="BG">BULGARIA</option>
-                      <option value="BF">BURKINA FASO</option>
-                      <option value="BI">BURUNDI</option>
-                      <option value="KH">CAMBODIA</option>
-                      <option value="CM">CAMEROON</option>
-                      <option value="CA">CANADA</option>
-                      <option value="CV">CAPE VERDE</option>
-                      <option value="KY">CAYMAN ISLANDS</option>
-                      <option value="CF">CENTRAL AFRICAN REPUBLIC</option>
-                      <option value="TD">CHAD</option>
-                      <option value="CL">CHILE</option>
-                      <option value="CN">CHINA</option>
-                      <option value="CX">CHRISTMAS ISLAND</option>
-                      <option value="CO">COLOMBIA</option>
-                      <option value="KM">COMOROS</option>
-                      <option value="CK">COOK ISLANDS</option>
-                      <option value="CR">COSTA RICA</option>
-                      <option value="CI">COTE D'IVOIRE</option>
-                      <option value="CU">CUBA</option>
-                      <option value="CY">CYPRUS</option>
-                      <option value="CZ">CZECH REPUBLIC</option>
-                      <option value="DK">DENMARK</option>
-                      <option value="DJ">DJIBOUTI</option>
-                      <option value="DM">DOMINICA</option>
-                      <option value="DO">DOMINICAN REPUBLIC</option>
-                      <option value="EC">ECUADOR</option>
-                      <option value="EG">EGYPT</option>
-                      <option value="SV">EL SALVADOR</option>
-                      <option value="GQ">EQUATORIAL GUINEA</option>
-                      <option value="ER">ERITREA</option>
-                      <option value="EE">ESTONIA</option>
-                      <option value="ET">ETHIOPIA</option>
-                      <option value="FO">FAROE ISLANDS</option>
-                      <option value="FJ">FIJI</option>
-                      <option value="FI">FINLAND</option>
-                      <option value="FR">FRANCE</option>
-                      <option value="GF">FRENCH GUIANA</option>
-                      <option value="PF">FRENCH POLYNESIA</option>
-                      <option value="TF">FRENCH SOUTHERN TERRITORIES</option>
-                      <option value="GA">GABON</option>
-                      <option value="GM">GAMBIA</option>
-                      <option value="GE">GEORGIA</option>
-                      <option value="DE">GERMANY</option>
-                      <option value="GH">GHANA</option>
-                      <option value="GI">GIBRALTAR</option>
-                      <option value="GR">GREECE</option>
-                      <option value="GL">GREENLAND</option>
-                      <option value="GD">GRENADA</option>
-                      <option value="GP">GUADELOUPE</option>
-                      <option value="GU">GUAM</option>
-                      <option value="GT">GUATEMALA</option>
-                      <option value="GN">GUINEA</option>
-                      <option value="GW">GUINEA-BISSAU</option>
-                      <option value="GY">GUYANA</option>
-                      <option value="HT">HAITI</option>
-                      <option value="HM">HEARD AND MC DONALD ISLANDS</option>
-                      <option value="HN">HONDURAS</option>
-                      <option value="HK">HONG KONG</option>
-                      <option value="HU">HUNGARY</option>
-                      <option value="IS">ICELAND</option>
-                      <option value="IN">INDIA</option>
-                      <option value="ID">INDONESIA</option>
-                      <option value="IQ">IRAQ</option>
-                      <option value="IE">IRELAND</option>
-                      <option value="IL">ISRAEL</option>
-                      <option value="IT">ITALY</option>
-                      <option value="JM">JAMAICA</option>
-                      <option value="JP">JAPAN</option>
-                      <option value="JO">JORDAN</option>
-                      <option value="KZ">KAZAKHSTAN</option>
-                      <option value="KE">KENYA</option>
-                      <option value="KI">KIRIBATI</option>
-                      <option value="KW">KUWAIT</option>
-                      <option value="KG">KYRGYZSTAN</option>
-                      <option value="LA">
-                        LAO PEOPLE'S DEMOCRATIC REPUBLIC
-                      </option>
-                      <option value="LV">LATVIA</option>
-                      <option value="LB">LEBANON</option>
-                      <option value="LS">LESOTHO</option>
-                      <option value="LR">LIBERIA</option>
-                      <option value="LY">LIBYAN ARAB JAMAHIRIYA</option>
-                      <option value="LI">LIECHTENSTEIN</option>
-                      <option value="LT">LITHUANIA</option>
-                      <option value="LU">LUXEMBOURG</option>
-                      <option value="MO">MACAU</option>
-                      <option value="MG">MADAGASCAR</option>
-                      <option value="MW">MALAWI</option>
-                      <option value="MY">MALAYSIA</option>
-                      <option value="MV">MALDIVES</option>
-                      <option value="ML">MALI</option>
-                      <option value="MT">MALTA</option>
-                      <option value="MH">MARSHALL ISLANDS</option>
-                      <option value="MQ">MARTINIQUE</option>
-                      <option value="MR">MAURITANIA</option>
-                      <option value="MU">MAURITIUS</option>
-                      <option value="YT">MAYOTTE</option>
-                      <option value="MX">MEXICO</option>
-                      <option value="MC">MONACO</option>
-                      <option value="MN">MONGOLIA</option>
-                      <option value="MS">MONTSERRAT</option>
-                      <option value="MA">MOROCCO</option>
-                      <option value="MZ">MOZAMBIQUE</option>
-                      <option value="MM">MYANMAR</option>
-                      <option value="NA">NAMIBIA</option>
-                      <option value="NR">NAURU</option>
-                      <option value="NP">NEPAL</option>
-                      <option value="NL">NETHERLANDS</option>
-                      <option value="AN">NETHERLANDS ANTILLES</option>
-                      <option value="NC">NEW CALEDONIA</option>
-                      <option value="NZ">NEW ZEALAND</option>
-                      <option value="NI">NICARAGUA</option>
-                      <option value="NE">NIGER</option>
-                      <option value="NG">NIGERIA</option>
-                      <option value="NU">NIUE</option>
-                      <option value="NF">NORFOLK ISLAND</option>
-                      <option value="MP">NORTHERN MARIANA ISLANDS</option>
-                      <option value="NO">NORWAY</option>
-                      <option value="OM">OMAN</option>
-                      <option value="PK">PAKISTAN</option>
-                      <option value="PW">PALAU</option>
-                      <option value="PA">PANAMA</option>
-                      <option value="PG">PAPUA NEW GUINEA</option>
-                      <option value="PY">PARAGUAY</option>
-                      <option value="PE">PERU</option>
-                      <option value="PH">PHILIPPINES</option>
-                      <option value="PN">PITCAIRN</option>
-                      <option value="PL">POLAND</option>
-                      <option value="PT">PORTUGAL</option>
-                      <option value="PR">PUERTO RICO</option>
-                      <option value="QA">QATAR</option>
-                      <option value="RE">REUNION</option>
-                      <option value="RO">ROMANIA</option>
-                      <option value="RU">RUSSIAN FEDERATION</option>
-                      <option value="RW">RWANDA</option>
-                      <option value="SH">SAINT HELENA</option>
-                      <option value="KN">SAINT KITTS AND NEVIS</option>
-                      <option value="LC">SAINT LUCIA</option>
-                      <option value="PM">SAINT PIERRE AND MIQUELON</option>
-                      <option value="VC">
-                        SAINT VINCENT AND THE GRENADINES
-                      </option>
-                      <option value="WS">SAMOA</option>
-                      <option value="SM">SAN MARINO</option>
-                      <option value="ST">SAO TOME AND PRINCIPE</option>
-                      <option value="SA">SAUDI ARABIA</option>
-                      <option value="SN">SENEGAL</option>
-                      <option value="CS">SERBIA AND MONTENEGRO</option>
-                      <option value="SC">SEYCHELLES</option>
-                      <option value="SL">SIERRA LEONE</option>
-                      <option value="SG">SINGAPORE</option>
-                      <option value="SK">SLOVAKIA</option>
-                      <option value="SI">SLOVENIA</option>
-                      <option value="SB">SOLOMON ISLANDS</option>
-                      <option value="SO">SOMALIA</option>
-                      <option value="ZA">SOUTH AFRICA</option>
-                      <option value="GS">
-                        SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS
-                      </option>
-                      <option value="ES">SPAIN</option>
-                      <option value="LK">SRI LANKA</option>
-                      <option value="SD">SUDAN</option>
-                      <option value="SR">SURINAME</option>
-                      <option value="SJ">SVALBARD AND JAN MAYEN ISLANDS</option>
-                      <option value="SZ">SWAZILAND</option>
-                      <option value="SE">SWEDEN</option>
-                      <option value="CH">SWITZERLAND</option>
-                      <option value="SY">SYRIAN ARAB REPUBLIC</option>
-                      <option value="TW">TAIWAN</option>
-                      <option value="TJ">TAJIKISTAN</option>
-                      <option value="TH">THAILAND</option>
-                      <option value="TL">TIMOR-LESTE</option>
-                      <option value="TG">TOGO</option>
-                      <option value="TK">TOKELAU</option>
-                      <option value="TO">TONGA</option>
-                      <option value="TT">TRINIDAD AND TOBAGO</option>
-                      <option value="TN">TUNISIA</option>
-                      <option value="TR">TURKEY</option>
-                      <option value="TM">TURKMENISTAN</option>
-                      <option value="TC">TURKS AND CAICOS ISLANDS</option>
-                      <option value="TV">TUVALU</option>
-                      <option value="UG">UGANDA</option>
-                      <option value="UA">UKRAINE</option>
-                      <option value="AE">UNITED ARAB EMIRATES</option>
-                      <option value="GB">UNITED KINGDOM</option>
-                      <option value="US">UNITED STATES</option>
-                      <option value="UM">
-                        UNITED STATES MINOR OUTLYING ISLANDS
-                      </option>
-                      <option value="UY">URUGUAY</option>
-                      <option selected value="UZ">UZBEKISTAN</option>
-                      <option value="VU">VANUATU</option>
-                      <option value="VE">VENEZUELA</option>
-                      <option value="VN">VIET NAM</option>
-                      <option value="WF">WALLIS AND FUTUNA ISLANDS</option>
-                      <option value="EH">WESTERN SAHARA</option>
-                      <option value="YE">YEMEN</option>
-                      <option value="ZM">ZAMBIA</option>
-                      <option value="ZW">ZIMBABWE</option>
-                    </select>
-                  </div>
-                  <div class="col-12">
-                    <button type="submit" class="btn btn-warning">
-                      Сохранить
-                    </button>
-                  </div>
-                </form>
-              </div>
-              <!-- col-sm-6 -->
-              <div class="col-sm-6">
-                <h3 class="mb-3">
-                  Ваши карты
-                  <img
-                    class="ml-5"
-                    height="25"
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAAjCAMAAADrNwfvAAAArlBMVEUAAAAAPYcAPocAPYcAO4UAOYUANYYAPocAPIYAPYcAP4YAPIYAP4gAPocAPogAPocAPoUAQnYAOoUAPoYAPYcAPYYAPocAPYYAPocAPocAPYcAPocAPocAPYcAPocAPoUAPocAPYcAPoYAPokAPYYAPocAPocAPYYAPocAPYcAPogAPocAPYcAPof/hgD/gAAAPYgAPYYAPYf/iQD/hwD/igAAO4T/gAAAPof/iAAXwlIsAAAAOHRSTlMA/fmHGikJwSXzeFmnk3TrIAMWgmUP5bh9793Ww2lLQNCccDk0y4xFq2BSLqOVaQa7s5OG5MQeEsvbhOMAAAIkSURBVEjH3ZRpz6IwEIDbUgtF5RBEFA8Q72N9jz3G///HFmZqSMy7yQb5sNnnA5kp7UNnKLA/YQEyoMz25ef9fv/G2vDsguj2ozPXtPz1+b0jF+hY3W7duCryouzGhSz+Z1ffQ85duEYSUf9aja+5IkAOlM0pO7ZzuYDMMVEZZad2riMgPrbb0ZS1fI+lAMSrk5Rirdq51AwQYW02lvFuWUuuYBAcDGlbVyDgCX/E2pI+qXiftUbtwGAax17hOGtU2Yq9Rngq8qnWib3bh6wDQvU3mvJjKFk3jGbAe0z1al+IVzbuIWYj4/0STwHdcWiU5oyNogqDelz64EsWcLuKHT5hFWuOOLhmqAHEVdEqi/MlRX1eIS5odus4sVQ1+tZnLIB549p4nvdGZzK8QL6I5xDR+UiEOBgXTLw0gzW6YODtcnhH8ZOrjhLawF5ksipiTVUuocj0yLiiOr+QK67m5LD60qVs+MDAoycT4USsLFgb19U5F5AaF/6eoi9dEdjKfEFx4zrrXDliq8glhOAzp3GdYPdwbetGwTvVon2HxmP6PZPYhW0UTcWGXLalfckal/V47HjG++NgABaKM+5KKWlcuKPxwo9r4ZbrCige/bIgNS5X9lLhB4yIhZj5kGFj1wDTirKOVxqShPu9OqxKcpySJ8q4ZOL/JJeeCkiaT3VV2BOP9rwfIg5V707stIdbGZ5w5TCo2zFc1m09hGb+ri8Z8RuJv2K4FAf4iAAAAABJRU5ErkJggg=="
-                  />
-                  <img src="images/visa-master.png" height="30" alt="" />
-                  <img src="images/paynet.png" alt="" height="30" />
-                </h3>
-                <br />
-
-                <div class="connected-cards mb-4">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="mb-3">
-                        <h5>Карта 1. Mastercard</h5>
-                        <label for="exampleFormControlInput1" class="form-label"
-                          >Владелец карты</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="exampleFormControlInput1"
-                          value="John MacDinam"
-                          disabled
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label for="credit-number" class="form-label"
-                          >Номер карты</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="credit-number"
-                          value="8600 22** **** 0123"
-                          disabled
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Button trigger modal -->
-                <button
-                  type="button"
-                  class="btn btn-warning fs-5"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  <b>Добавить новую карту</b>
-                </button>
-
-                <!-- Modal -->
-                <div
-                  class="modal fade card-credit"
-                  id="exampleModal"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">
-                          Добавить новую карту
-                        </h5>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="container preload">
-                          <div class="creditcard">
-                            <div class="front">
-                              <div id="ccsingle"></div>
-                              <svg
-                                version="1.1"
-                                id="cardfront"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                x="0px"
-                                y="0px"
-                                viewBox="0 0 750 471"
-                                style="enable-background: new 0 0 750 471"
-                                xml:space="preserve"
-                              >
-                                <g id="Front">
-                                  <g id="CardBackground">
-                                    <g id="Page-1_1_">
-                                      <g id="amex_1_">
-                                        <path
-                                          id="Rectangle-1_1_"
-                                          class="lightcolor grey"
-                                          d="M40,0h670c22.1,0,40,17.9,40,40v391c0,22.1-17.9,40-40,40H40c-22.1,0-40-17.9-40-40V40
-                                              C0,17.9,17.9,0,40,0z"
-                                        />
-                                      </g>
-                                    </g>
-                                    <path
-                                      class="darkcolor greydark"
-                                      d="M750,431V193.2c-217.6-57.5-556.4-13.5-750,24.9V431c0,22.1,17.9,40,40,40h670C732.1,471,750,453.1,750,431z"
-                                    />
-                                  </g>
-                                  <text
-                                    transform="matrix(1 0 0 1 60.106 295.0121)"
-                                    id="svgnumber"
-                                    class="st2 st3 st4"
-                                  >
-                                    0123 4567 8910 1112
-                                  </text>
-                                  <text
-                                    transform="matrix(1 0 0 1 54.1064 428.1723)"
-                                    id="svgname"
-                                    class="st2 st5 st6"
-                                  >
-                                    JOHN DOE
-                                  </text>
-                                  <text
-                                    transform="matrix(1 0 0 1 54.1074 389.8793)"
-                                    class="st7 st5 st8"
-                                  >
-                                    cardholder name
-                                  </text>
-                                  <text
-                                    transform="matrix(1 0 0 1 479.7754 388.8793)"
-                                    class="st7 st5 st8"
-                                  >
-                                    expiration
-                                  </text>
-                                  <text
-                                    transform="matrix(1 0 0 1 65.1054 241.5)"
-                                    class="st7 st5 st8"
-                                  >
-                                    card number
-                                  </text>
-                                  <g>
-                                    <text
-                                      transform="matrix(1 0 0 1 574.4219 433.8095)"
-                                      id="svgexpire"
-                                      class="st2 st5 st9"
-                                    >
-                                      01/23
-                                    </text>
-                                    <text
-                                      transform="matrix(1 0 0 1 479.3848 417.0097)"
-                                      class="st2 st10 st11"
-                                    >
-                                      VALID
-                                    </text>
-                                    <text
-                                      transform="matrix(1 0 0 1 479.3848 435.6762)"
-                                      class="st2 st10 st11"
-                                    >
-                                      THRU
-                                    </text>
-                                    <polygon
-                                      class="st2"
-                                      points="554.5,421 540.4,414.2 540.4,427.9         "
-                                    />
-                                  </g>
-                                  <g id="cchip">
-                                    <g>
-                                      <path
-                                        class="st2"
-                                        d="M168.1,143.6H82.9c-10.2,0-18.5-8.3-18.5-18.5V74.9c0-10.2,8.3-18.5,18.5-18.5h85.3
-                                          c10.2,0,18.5,8.3,18.5,18.5v50.2C186.6,135.3,178.3,143.6,168.1,143.6z"
-                                      />
-                                    </g>
-                                    <g>
-                                      <g>
-                                        <rect
-                                          x="82"
-                                          y="70"
-                                          class="st12"
-                                          width="1.5"
-                                          height="60"
-                                        />
-                                      </g>
-                                      <g>
-                                        <rect
-                                          x="167.4"
-                                          y="70"
-                                          class="st12"
-                                          width="1.5"
-                                          height="60"
-                                        />
-                                      </g>
-                                      <g>
-                                        <path
-                                          class="st12"
-                                          d="M125.5,130.8c-10.2,0-18.5-8.3-18.5-18.5c0-4.6,1.7-8.9,4.7-12.3c-3-3.4-4.7-7.7-4.7-12.3
-                                              c0-10.2,8.3-18.5,18.5-18.5s18.5,8.3,18.5,18.5c0,4.6-1.7,8.9-4.7,12.3c3,3.4,4.7,7.7,4.7,12.3
-                                              C143.9,122.5,135.7,130.8,125.5,130.8z M125.5,70.8c-9.3,0-16.9,7.6-16.9,16.9c0,4.4,1.7,8.6,4.8,11.8l0.5,0.5l-0.5,0.5
-                                              c-3.1,3.2-4.8,7.4-4.8,11.8c0,9.3,7.6,16.9,16.9,16.9s16.9-7.6,16.9-16.9c0-4.4-1.7-8.6-4.8-11.8l-0.5-0.5l0.5-0.5
-                                              c3.1-3.2,4.8-7.4,4.8-11.8C142.4,78.4,134.8,70.8,125.5,70.8z"
-                                        />
-                                      </g>
-                                      <g>
-                                        <rect
-                                          x="82.8"
-                                          y="82.1"
-                                          class="st12"
-                                          width="25.8"
-                                          height="1.5"
-                                        />
-                                      </g>
-                                      <g>
-                                        <rect
-                                          x="82.8"
-                                          y="117.9"
-                                          class="st12"
-                                          width="26.1"
-                                          height="1.5"
-                                        />
-                                      </g>
-                                      <g>
-                                        <rect
-                                          x="142.4"
-                                          y="82.1"
-                                          class="st12"
-                                          width="25.8"
-                                          height="1.5"
-                                        />
-                                      </g>
-                                      <g>
-                                        <rect
-                                          x="142"
-                                          y="117.9"
-                                          class="st12"
-                                          width="26.2"
-                                          height="1.5"
-                                        />
-                                      </g>
-                                    </g>
-                                  </g>
-                                </g>
-                                <g id="Back"></g>
-                              </svg>
-                            </div>
-                            <div class="back">
-                              <svg
-                                version="1.1"
-                                id="cardback"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                x="0px"
-                                y="0px"
-                                viewBox="0 0 750 471"
-                                style="enable-background: new 0 0 750 471"
-                                xml:space="preserve"
-                              >
-                                <g id="Front">
-                                  <line
-                                    class="st0"
-                                    x1="35.3"
-                                    y1="10.4"
-                                    x2="36.7"
-                                    y2="11"
-                                  />
-                                </g>
-                                <g id="Back">
-                                  <g id="Page-1_2_">
-                                    <g id="amex_2_">
-                                      <path
-                                        id="Rectangle-1_2_"
-                                        class="darkcolor greydark"
-                                        d="M40,0h670c22.1,0,40,17.9,40,40v391c0,22.1-17.9,40-40,40H40c-22.1,0-40-17.9-40-40V40
-                                          C0,17.9,17.9,0,40,0z"
-                                      />
-                                    </g>
-                                  </g>
-                                  <rect
-                                    y="61.6"
-                                    class="st2"
-                                    width="750"
-                                    height="78"
-                                  />
-                                  <g>
-                                    <path
-                                      class="st3"
-                                      d="M701.1,249.1H48.9c-3.3,0-6-2.7-6-6v-52.5c0-3.3,2.7-6,6-6h652.1c3.3,0,6,2.7,6,6v52.5
-                                      C707.1,246.4,704.4,249.1,701.1,249.1z"
-                                    />
-                                    <rect
-                                      x="42.9"
-                                      y="198.6"
-                                      class="st4"
-                                      width="664.1"
-                                      height="10.5"
-                                    />
-                                    <rect
-                                      x="42.9"
-                                      y="224.5"
-                                      class="st4"
-                                      width="664.1"
-                                      height="10.5"
-                                    />
-                                    <path
-                                      class="st5"
-                                      d="M701.1,184.6H618h-8h-10v64.5h10h8h83.1c3.3,0,6-2.7,6-6v-52.5C707.1,187.3,704.4,184.6,701.1,184.6z"
-                                    />
-                                  </g>
-                                  <text
-                                    transform="matrix(1 0 0 1 621.999 227.2734)"
-                                    id="svgsecurity"
-                                    class="st6 st7"
-                                  >
-                                    985
-                                  </text>
-                                  <g class="st8">
-                                    <text
-                                      transform="matrix(1 0 0 1 518.083 280.0879)"
-                                      class="st9 st6 st10"
-                                    >
-                                      security code
-                                    </text>
-                                  </g>
-                                  <rect
-                                    x="58.1"
-                                    y="378.6"
-                                    class="st11"
-                                    width="375.5"
-                                    height="13.5"
-                                  />
-                                  <rect
-                                    x="58.1"
-                                    y="405.6"
-                                    class="st11"
-                                    width="421.7"
-                                    height="13.5"
-                                  />
-                                  <text
-                                    transform="matrix(1 0 0 1 59.5073 228.6099)"
-                                    id="svgnameback"
-                                    class="st12 st13"
-                                  >
-                                    John Doe
-                                  </text>
-                                </g>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-container">
-                          <div class="field-container">
-                            <label for="name">Имя владельца карты</label>
-                            <input id="name" maxlength="20" type="text" />
-                          </div>
-                          <div class="field-container">
-                            <label for="cardnumber">Номер карты</label
-                            ><span
-                              class="d-none"
-                              style="visibility: hidden"
-                              id="generatecard"
-                              >generate random</span
-                            >
-                            <input
-                              id="cardnumber"
-                              type="text"
-                              pattern="[0-9]*"
-                              inputmode="numeric"
-                            />
-                            <svg
-                              id="ccicon"
-                              class="ccicon"
-                              width="750"
-                              height="471"
-                              viewBox="0 0 750 471"
-                              version="1.1"
-                              xmlns="http://www.w3.org/2000/svg"
-                              xmlns:xlink="http://www.w3.org/1999/xlink"
-                            ></svg>
-                          </div>
-                          <div class="field-container">
-                            <label for="expirationdate"
-                              >срок действия (mm/yy)</label
-                            >
-                            <input
-                              id="expirationdate"
-                              type="text"
-                              pattern="[0-9]*"
-                              inputmode="numeric"
-                            />
-                          </div>
-                          <div class="field-container">
-                            <label for="securitycode">ПИН</label>
-                            <input
-                              id="securitycode"
-                              type="text"
-                              pattern="[0-9]*"
-                              inputmode="numeric"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">
-                          Добавить
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
-          </div>
+          </nav>
         </section>
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                <h1 class="m-0">Личный кабинет</h1>
+              </div>
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="container-fluid">
+            <!-- Small boxes (Stat box) -->
+            <div class="row">
+              <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-info">
+                  <div class="inner">
+                    <h3>100 000</h3>
+
+                    <p></p>
+                  </div>
+                  <div class="icon">
+                    <i class="ion ion-stats-bars"></i>
+                  </div>
+                  <a href="#" class="small-box-footer"
+                    >More info <i class="fas fa-arrow-circle-right"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- ./col -->
+              <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-success">
+                  <div class="inner">
+                    <h3>1 000 000</h3>
+
+                    <p></p>
+                  </div>
+                  <div class="icon">
+                    <i class="ion ion-stats-bars"></i>
+                  </div>
+                  <a href="#" class="small-box-footer"
+                    >More info <i class="fas fa-arrow-circle-right"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- ./col -->
+              <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-warning">
+                  <div class="inner">
+                    <h3>10 000 000</h3>
+
+                    <p></p>
+                  </div>
+                  <div class="icon">
+                    <i class="ion ion-stats-bars"></i>
+                  </div>
+                  <a href="#" class="small-box-footer"
+                    >More info <i class="fas fa-arrow-circle-right"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- ./col -->
+              <div class="col-lg-3 col-6">
+                <!-- small box -->
+                <div class="small-box bg-danger">
+                  <div class="inner">
+                    <h3 style="opacity: 0">65</h3>
+                    <p></p>
+                  </div>
+                  <div class="icon">
+                    <i class="ion ion-stats-bars"></i>
+                  </div>
+                  <a href="#" class="small-box-footer"
+                    >More info <i class="fas fa-arrow-circle-right"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- ./col -->
+            </div>
+            <!-- /.row -->
+            <!-- Main row -->
+            <div class="row">
+              <!-- Left col -->
+              <section class="col-lg-6 connectedSortable">
+                <!-- Custom tabs (Charts with tabs)-->
+
+                <div class="card">
+                  <div
+                    class="alert alert-secondary m-0 p-4 d-flex align-items-center"
+                    role="alert"
+                  >
+                    <div class="banace mr-5">
+                      Баланс:
+                      <h3 class="m-0"><b class="h1"> 1000$</b></h3>
+                    </div>
+                    <a
+                      href="#"
+                      class="btn btn-success"
+                      style="text-decoration: none"
+                      ><i class="fa fa-plus mr-2"></i> Пополнить балан</a
+                    >
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="alert alert-secondary m-0 p-4" role="alert">
+                    <div class="row">
+                      <div class="col-12"><h3 class="mb-3 text-center">Личные данные</h3></div>
+                      <div class="col-lg-5 d-flex align-items-center  flex-column">
+                        <h5 class="mb-4">Настройки</h5>
+                        <div 
+                        style="border-radius: 70px; width: 70px; height: 70px; font-size: 28px; display: flex; justify-content: center; align-items: center;" 
+                        class="border  border-dark mb-4">
+                          <i class="fa fa-user "></i></a>
+                        </div>
+
+                        <label for="avatar" class="btn btn-dark">Сменить аватар</label>
+                        <input type="file" style="visibility: hidden;"id="avatar">
+                       
+                      </div>
+                      <div class="col-lg-6">
+                        <form class="row g-3 mb-5">
+                          <div class="col-12">
+                            <label for="inputAddress" class="form-label"
+                              >Ваш nickname (user name)</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="inputAddress"
+                              value="Rich787"
+                              disabled
+                            />
+                          </div>
+                          <div class="col-md-12">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="inputEmail4"
+                              value="test@mail.ru"
+                              disabled
+                            />
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card p-4">
+                  <div class="col-sm-12">
+                    <h3 class="mb-3">
+                      Ваши карты
+                      <img class="ml-5" height="25" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAAjCAMAAADrNwfvAAAArlBMVEUAAAAAPYcAPocAPYcAO4UAOYUANYYAPocAPIYAPYcAP4YAPIYAP4gAPocAPogAPocAPoUAQnYAOoUAPoYAPYcAPYYAPocAPYYAPocAPocAPYcAPocAPocAPYcAPocAPoUAPocAPYcAPoYAPokAPYYAPocAPocAPYYAPocAPYcAPogAPocAPYcAPof/hgD/gAAAPYgAPYYAPYf/iQD/hwD/igAAO4T/gAAAPof/iAAXwlIsAAAAOHRSTlMA/fmHGikJwSXzeFmnk3TrIAMWgmUP5bh9793Ww2lLQNCccDk0y4xFq2BSLqOVaQa7s5OG5MQeEsvbhOMAAAIkSURBVEjH3ZRpz6IwEIDbUgtF5RBEFA8Q72N9jz3G///HFmZqSMy7yQb5sNnnA5kp7UNnKLA/YQEyoMz25ef9fv/G2vDsguj2ozPXtPz1+b0jF+hY3W7duCryouzGhSz+Z1ffQ85duEYSUf9aja+5IkAOlM0pO7ZzuYDMMVEZZad2riMgPrbb0ZS1fI+lAMSrk5Rirdq51AwQYW02lvFuWUuuYBAcDGlbVyDgCX/E2pI+qXiftUbtwGAax17hOGtU2Yq9Rngq8qnWib3bh6wDQvU3mvJjKFk3jGbAe0z1al+IVzbuIWYj4/0STwHdcWiU5oyNogqDelz64EsWcLuKHT5hFWuOOLhmqAHEVdEqi/MlRX1eIS5odus4sVQ1+tZnLIB549p4nvdGZzK8QL6I5xDR+UiEOBgXTLw0gzW6YODtcnhH8ZOrjhLawF5ksipiTVUuocj0yLiiOr+QK67m5LD60qVs+MDAoycT4USsLFgb19U5F5AaF/6eoi9dEdjKfEFx4zrrXDliq8glhOAzp3GdYPdwbetGwTvVon2HxmP6PZPYhW0UTcWGXLalfckal/V47HjG++NgABaKM+5KKWlcuKPxwo9r4ZbrCige/bIgNS5X9lLhB4yIhZj5kGFj1wDTirKOVxqShPu9OqxKcpySJ8q4ZOL/JJeeCkiaT3VV2BOP9rwfIg5V707stIdbGZ5w5TCo2zFc1m09hGb+ri8Z8RuJv2K4FAf4iAAAAABJRU5ErkJggg==">
+                      <img src="images/visa-master.png" height="30" alt="">
+                      <img src="images/paynet.png" alt="" height="30">
+                    </h3>
+                    <br>
+    
+                    <div class="connected-cards mb-4">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="mb-3">
+                            <h5>Карта 1. Mastercard</h5>
+                            <label for="exampleFormControlInput1" class="form-label">Владелец карты</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" value="John MacDinam" disabled="">
+                          </div>
+                          <div class="mb-3">
+                            <label for="credit-number" class="form-label">Номер карты</label>
+                            <input type="text" class="form-control" id="credit-number" value="8600 22** **** 0123" disabled="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-warning fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <b>Добавить новую карту</b>
+                    </button>
+    
+                    <!-- Modal -->
+                    <div class="modal fade card-credit" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                              Добавить новую карту
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="container">
+                              <div class="creditcard">
+                                <div class="front">
+                                  <div id="ccsingle"></div>
+                                  <svg version="1.1" id="cardfront" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 750 471" style="enable-background: new 0 0 750 471" xml:space="preserve">
+                                    <g id="Front">
+                                      <g id="CardBackground">
+                                        <g id="Page-1_1_">
+                                          <g id="amex_1_">
+                                            <path id="Rectangle-1_1_" class="lightcolor grey" d="M40,0h670c22.1,0,40,17.9,40,40v391c0,22.1-17.9,40-40,40H40c-22.1,0-40-17.9-40-40V40
+                                                  C0,17.9,17.9,0,40,0z"></path>
+                                          </g>
+                                        </g>
+                                        <path class="darkcolor greydark" d="M750,431V193.2c-217.6-57.5-556.4-13.5-750,24.9V431c0,22.1,17.9,40,40,40h670C732.1,471,750,453.1,750,431z"></path>
+                                      </g>
+                                      <text transform="matrix(1 0 0 1 60.106 295.0121)" id="svgnumber" class="st2 st3 st4">
+                                        0123 4567 8910 1112
+                                      </text>
+                                      <text transform="matrix(1 0 0 1 54.1064 428.1723)" id="svgname" class="st2 st5 st6">
+                                        JOHN DOE
+                                      </text>
+                                      <text transform="matrix(1 0 0 1 54.1074 389.8793)" class="st7 st5 st8">
+                                        cardholder name
+                                      </text>
+                                      <text transform="matrix(1 0 0 1 479.7754 388.8793)" class="st7 st5 st8">
+                                        expiration
+                                      </text>
+                                      <text transform="matrix(1 0 0 1 65.1054 241.5)" class="st7 st5 st8">
+                                        card number
+                                      </text>
+                                      <g>
+                                        <text transform="matrix(1 0 0 1 574.4219 433.8095)" id="svgexpire" class="st2 st5 st9">
+                                          01/23
+                                        </text>
+                                        <text transform="matrix(1 0 0 1 479.3848 417.0097)" class="st2 st10 st11">
+                                          VALID
+                                        </text>
+                                        <text transform="matrix(1 0 0 1 479.3848 435.6762)" class="st2 st10 st11">
+                                          THRU
+                                        </text>
+                                        <polygon class="st2" points="554.5,421 540.4,414.2 540.4,427.9         "></polygon>
+                                      </g>
+                                      <g id="cchip">
+                                        <g>
+                                          <path class="st2" d="M168.1,143.6H82.9c-10.2,0-18.5-8.3-18.5-18.5V74.9c0-10.2,8.3-18.5,18.5-18.5h85.3
+                                              c10.2,0,18.5,8.3,18.5,18.5v50.2C186.6,135.3,178.3,143.6,168.1,143.6z"></path>
+                                        </g>
+                                        <g>
+                                          <g>
+                                            <rect x="82" y="70" class="st12" width="1.5" height="60"></rect>
+                                          </g>
+                                          <g>
+                                            <rect x="167.4" y="70" class="st12" width="1.5" height="60"></rect>
+                                          </g>
+                                          <g>
+                                            <path class="st12" d="M125.5,130.8c-10.2,0-18.5-8.3-18.5-18.5c0-4.6,1.7-8.9,4.7-12.3c-3-3.4-4.7-7.7-4.7-12.3
+                                                  c0-10.2,8.3-18.5,18.5-18.5s18.5,8.3,18.5,18.5c0,4.6-1.7,8.9-4.7,12.3c3,3.4,4.7,7.7,4.7,12.3
+                                                  C143.9,122.5,135.7,130.8,125.5,130.8z M125.5,70.8c-9.3,0-16.9,7.6-16.9,16.9c0,4.4,1.7,8.6,4.8,11.8l0.5,0.5l-0.5,0.5
+                                                  c-3.1,3.2-4.8,7.4-4.8,11.8c0,9.3,7.6,16.9,16.9,16.9s16.9-7.6,16.9-16.9c0-4.4-1.7-8.6-4.8-11.8l-0.5-0.5l0.5-0.5
+                                                  c3.1-3.2,4.8-7.4,4.8-11.8C142.4,78.4,134.8,70.8,125.5,70.8z"></path>
+                                          </g>
+                                          <g>
+                                            <rect x="82.8" y="82.1" class="st12" width="25.8" height="1.5"></rect>
+                                          </g>
+                                          <g>
+                                            <rect x="82.8" y="117.9" class="st12" width="26.1" height="1.5"></rect>
+                                          </g>
+                                          <g>
+                                            <rect x="142.4" y="82.1" class="st12" width="25.8" height="1.5"></rect>
+                                          </g>
+                                          <g>
+                                            <rect x="142" y="117.9" class="st12" width="26.2" height="1.5"></rect>
+                                          </g>
+                                        </g>
+                                      </g>
+                                    </g>
+                                    <g id="Back"></g>
+                                  </svg>
+                                </div>
+                                <div class="back">
+                                  <svg version="1.1" id="cardback" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 750 471" style="enable-background: new 0 0 750 471" xml:space="preserve">
+                                    <g id="Front">
+                                      <line class="st0" x1="35.3" y1="10.4" x2="36.7" y2="11"></line>
+                                    </g>
+                                    <g id="Back">
+                                      <g id="Page-1_2_">
+                                        <g id="amex_2_">
+                                          <path id="Rectangle-1_2_" class="darkcolor greydark" d="M40,0h670c22.1,0,40,17.9,40,40v391c0,22.1-17.9,40-40,40H40c-22.1,0-40-17.9-40-40V40
+                                              C0,17.9,17.9,0,40,0z"></path>
+                                        </g>
+                                      </g>
+                                      <rect y="61.6" class="st2" width="750" height="78"></rect>
+                                      <g>
+                                        <path class="st3" d="M701.1,249.1H48.9c-3.3,0-6-2.7-6-6v-52.5c0-3.3,2.7-6,6-6h652.1c3.3,0,6,2.7,6,6v52.5
+                                          C707.1,246.4,704.4,249.1,701.1,249.1z"></path>
+                                        <rect x="42.9" y="198.6" class="st4" width="664.1" height="10.5"></rect>
+                                        <rect x="42.9" y="224.5" class="st4" width="664.1" height="10.5"></rect>
+                                        <path class="st5" d="M701.1,184.6H618h-8h-10v64.5h10h8h83.1c3.3,0,6-2.7,6-6v-52.5C707.1,187.3,704.4,184.6,701.1,184.6z"></path>
+                                      </g>
+                                      <text transform="matrix(1 0 0 1 621.999 227.2734)" id="svgsecurity" class="st6 st7">
+                                        985
+                                      </text>
+                                      <g class="st8">
+                                        <text transform="matrix(1 0 0 1 518.083 280.0879)" class="st9 st6 st10">
+                                          security code
+                                        </text>
+                                      </g>
+                                      <rect x="58.1" y="378.6" class="st11" width="375.5" height="13.5"></rect>
+                                      <rect x="58.1" y="405.6" class="st11" width="421.7" height="13.5"></rect>
+                                      <text transform="matrix(1 0 0 1 59.5073 228.6099)" id="svgnameback" class="st12 st13">
+                                        John Doe
+                                      </text>
+                                    </g>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-container">
+                              <div class="field-container">
+                                <label for="name">Имя владельца карты</label>
+                                <input id="name" maxlength="20" type="text">
+                              </div>
+                              <div class="field-container">
+                                <label for="cardnumber">Номер карты</label><span class="d-none" style="visibility: hidden" id="generatecard">generate random</span>
+                                <input id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric">
+                                <svg id="ccicon" class="ccicon" width="750" height="471" viewBox="0 0 750 471" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></svg>
+                              </div>
+                              <div class="field-container">
+                                <label for="expirationdate">срок действия (mm/yy)</label>
+                                <input id="expirationdate" type="text" pattern="[0-9]*" inputmode="numeric">
+                              </div>
+                              <div class="field-container">
+                                <label for="securitycode">ПИН</label>
+                                <input id="securitycode" type="text" pattern="[0-9]*" inputmode="numeric">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">
+                              Добавить
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- /.card -->
+              </section>
+              <!-- /.Left col -->
+              <!-- right col (We are only adding the ID to make the widgets sortable)-->
+              <section class="col-lg-6 connectedSortable">
+                <!-- Map card -->
+                <div class="card p-4">
+                  <h3 class="mb-3">Список активных столов</h3>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">
+                      <img src="images/table30.png" class="mr-2 mt-n2" />
+                      <a href="#">Стол 1</a>
+                    </li>
+                    <li class="mb-2">
+                      <img src="images/table30.png" class="mr-2 mt-n2" />
+                      <a href="#">Стол 1</a>
+                    </li>
+                    <li class="mb-2">
+                      <img src="images/table30.png" class="mr-2 mt-n2" />
+                      <a href="#">Стол 7</a>
+                    </li>
+                    <li class="mb-2">
+                      <img src="images/table30.png" class="mr-2 mt-n2" />
+                      <a href="#">Стол 8</a>
+                    </li>
+                    <li class="mb-2">
+                      <img src="images/table30.png" class="mr-2 mt-n2" />
+                      <a href="#">Стол 11</a>
+                    </li>
+                    <li class="mb-2">
+                      <img src="images/table30.png" class="mr-2 mt-n2" />
+                      <a href="#">Стол 10</a>
+                    </li>
+                  </ul>
+                  <nav class="pt-3">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">«</span>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">»</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <!-- /.card -->
+
+                
+              </section>
+              <!-- right col -->
+            </div>
+            <!-- /.row (main row) -->
+          </div>
+          <!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
       </div>
+      <!-- /.content-wrapper -->
+      <footer class="main-footer">
+        <strong>&copy; 2022 <a href="">GIFT of Legend</a>.</strong>
+      </footer>
     </div>
     <!-- ./wrapper -->
 

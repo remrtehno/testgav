@@ -4,6 +4,14 @@
 @import 'main-style.scss';
 @import 'stol.scss';
 
+.small-box {
+  background-color: #368960 !important;
+}
+.small-box.bg-warning,
+.small-box.bg-warning > a {
+  color: white !important;
+}
+
 .header-navbar {
   background-color: #368960;
   .nav-link {
